@@ -1,0 +1,50 @@
+// COLORS
+$dark: #17141a;
+$lightDark: #222024;
+$white: #ebe5f0;
+$primary: #8322e4;
+$secondary: #ffa500;
+
+// TYPOGRAPHY
+$bodyFont: 'Poppins', sans-serif;
+$headingFont: 'Roboto, sans-serif';
+
+$h1: 1.75rem;
+$h2: 1.625rem;
+$h3: 1.5rem;
+$bodyText: 1rem;
+$smallText: .875rem;
+$navLink: 1.25rem;
+$btnText: 1rem;
+$iconSize: 1.375rem;
+
+$pdSmall: .5rem;
+$pdMd: .875rem;
+$pdLg: 1.5rem;
+$pdXl: 3rem;
+
+$marginSmall: .5rem;
+$marginMedium: 1rem;
+$marginLarge: 1.5rem;
+$marginXLarge: 3rem;
+
+// $headerHeight: 
+
+// BREAKPOINTS
+$mobile: 35.9375em;
+$tablet: 50rem;
+
+
+@keyframes slideRight {
+    0% {
+        width: 20px;
+    }
+
+    50% {
+        width: 40px;
+    }
+
+    100% {
+        width: 60px;
+    }
+}

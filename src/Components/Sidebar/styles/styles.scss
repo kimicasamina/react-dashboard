@@ -1,0 +1,168 @@
+@import '../../../Styles/Sass/variables';
+
+.sidebar {
+    display: block;
+    background-color: $lightDark;
+    color: $white;
+    width: 160px;
+    height: 100%;
+    // background-color: purple;
+    padding: $pdMd;
+}
+
+.logo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .beerIcon {
+        color: $secondary;
+        margin-right: $marginSmall;
+        font-size: 60px;
+    }
+    
+    .brand {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        color: $secondary;
+        font-weight: 700;
+    }
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    height: calc(100% - 10%);
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.menu .topMenu {
+    .item {
+        display: flex;
+        column-gap: $marginMedium;
+        cursor: pointer;
+        // row-gap: $marginSmall;
+        padding: $pdMd 0;
+        border-bottom: solid 1px transparent;
+        position: relative;
+
+        .menuIcon {
+            display: grid;
+            place-items: center;
+            font-size: $iconSize;
+        }
+
+        .menuTitle {
+            font-size: $navLink;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $secondary;
+            // animation: slideRight 0.5s ease-in forwards;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            // z-index: 2;
+        }
+
+        &:hover {
+            color: $secondary;
+            // background-color: purple;
+            // width: 100%;
+
+            .menuIcon {
+                transform: scale(1.1);
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: $secondary;
+                animation: slideRight 0.5s ease-in forwards;
+                width: 100%;
+                height: 4px;
+                left: 0;
+                bottom: 0;
+                // z-index: 2;
+            }
+        }
+    }
+}
+
+.menu .bottomMenu {
+    .item {
+        display: flex;
+        column-gap: $marginMedium;
+        cursor: pointer;
+        padding: $pdMd 0;
+        position: relative;
+
+        .menuIcon {
+            display: grid;
+            place-items: center;
+            font-size: $iconSize;
+        }
+
+        .menuTitle {
+            font-size: $navLink;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $secondary;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            // animation: slideRight 0.5s ease-in forwards;
+            // z-index: 2;
+        }
+
+        &:hover {
+            color: $secondary;
+
+            .menuIcon {
+                transform: scale(1.1);
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: $secondary;
+                animation: slideRight 0.5s ease-in forwards;
+                width: 10px;
+                height: 4px;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.menu {
+    .item.active {
+        color: $secondary;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $secondary;
+            animation: slideRight 0.5s ease-in forwards;
+            width: 10px;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}

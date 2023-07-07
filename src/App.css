@@ -1,0 +1,56 @@
+@keyframes slideRight {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #17141a;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,48 @@
+@import './Styles/Sass/variables';
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $bodyFont;
+  font-size: 16rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  // overflow: hidden;
+  background-color: $dark;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+p {
+  font-size: $bodyText;
+}
+
+li {
+  list-style: none;
+  font-size: $navLink;
+}
+
+a {
+  text-decoration: none;
+  font-size: $btnText;
+}

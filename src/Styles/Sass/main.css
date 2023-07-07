@@ -1,0 +1,11 @@
+@keyframes slideRight {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
