@@ -1,0 +1,170 @@
+@import '../../Styles/Sass/variables';
+
+.container {
+    background-color: $dark;
+    width: calc(100% - $sidebarWidth);
+    overflow: hidden;
+    padding: $pdMd;
+}
+
+.topContainer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    // background-color: purple;
+
+    .inputBox {
+        width: 350px;
+        max-width: 350px;
+        height: 70%;
+        display: flex;
+        position: relative;
+
+        .searchIcon {
+            position: absolute;
+            font-size: 25px;
+            top: 0;
+            left: 0;
+            margin: 16px;
+            color: $white;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            padding-left: 56px;
+            background-color: $lightDark;
+        }
+
+        input::placeholder {
+            color: $white;
+            font-size: 14px;
+        }
+    }
+
+    .profileContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 16px;
+        position: relative;
+        
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            
+        }
+        
+        .profileIcon {
+            position: relative;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .profileIcon::before {
+            content: '';
+            background-color: $lightDark;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            position: absolute;
+            z-index: -1;
+            top: -7px;
+            left: -7px;
+        }
+
+        .profileIcon::after {
+            content: '3';
+            position: absolute;
+            background-color: red;
+            width: 17px;
+            height: 17px;
+            top: -5px;
+            right: -3px;
+            border-radius: 50%;
+            font-style: normal;
+            font-size: 10px;
+            text-align: center;
+            line-height: 1.9;
+        }
+
+        .profileName {
+            // font-size: 20px;
+        }
+
+        .profileImage {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+
+        }
+
+        .chevronMenu {
+            // position: relative;
+            cursor: pointer;
+        }
+
+        .chevronMenuContainer {
+            position: relative;
+            background-color: orange;
+            // width: 180px;
+
+            ul {
+                position: absolute;
+                background-color: $lightDark;
+                display: flex;
+                flex-direction: column;
+                top: 50px;
+                right: 10px;
+                border-radius: 8px;
+                width: 170px;
+                z-index: 1;
+
+                &::before {
+                    content: '';
+                    background-color: $lightDark;
+                    width: 25px;
+                    height: 25px;
+                    top: -12px;
+                    right: 7px;
+                    position: absolute;
+                    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                    clip-path: polygon(53% 0, 0% 100%, 100% 100%);
+                    z-index: -1;
+                }
+                
+                li {
+                    width: 100%;
+                    padding: 8px 16px;
+                    cursor: pointer;
+                    font-size: 16px;
+
+                    &:first-child {
+                        border-radius: 8px 8px 0 0;
+                    }
+
+                    &:last-child{
+                        border-radius: 0 0 8px 8px;
+                    }
+
+                    &:hover {
+                      background-color: $primary;  
+                      transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+
+    }
+}

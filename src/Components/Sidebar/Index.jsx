@@ -54,17 +54,20 @@ const bottomMenu = [
 ]
 
 const Index = () => {
-  const [activeNav, setActiveNav] = useState("")
   const [navItem, setNavItem] = useState([])
-  const navTarget = useRef(null)
 
   const handleClick = (e) => {
-    const lis = document.querySelector('.topMenu').children
-    for (let i = 0; i < lis.length; i++){
-      if(lis[i].classList.contains('active')){
-        lis[i].classList.remove('active')
+    // LOOP THROUGH LI AND REMOVE ACTIVE CLASS
+    const topMenu = document.querySelector('.topMenu').children
+    const botMenu = document.querySelector('.bottomMenu').children
+    setNavItem([...topMenu, ...botMenu])
+    for (let i = 0; i < navItem.length; i++){
+      if(navItem[i].classList.contains('active')){
+        navItem[i].classList.remove('active')
       }
     }
+
+    // ADD ACTIVE CLASS TO THE TARGET LI
     const li = e.currentTarget
     if(!li.classList.contains('active')){
       li.classList.add('active')

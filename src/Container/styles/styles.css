@@ -1,0 +1,159 @@
+@keyframes slideRight {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+.container {
+  background-color: #17141a;
+  width: calc(100% - 11.25rem);
+  overflow: hidden;
+  padding: 0.875rem;
+}
+
+.topContainer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+.topContainer .inputBox {
+  width: 350px;
+  max-width: 350px;
+  height: 70%;
+  display: flex;
+  position: relative;
+}
+.topContainer .inputBox .searchIcon {
+  position: absolute;
+  font-size: 25px;
+  top: 0;
+  left: 0;
+  margin: 16px;
+  color: #ebe5f0;
+}
+.topContainer .inputBox input {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding-left: 56px;
+  background-color: #222024;
+}
+.topContainer .inputBox input::-moz-placeholder {
+  color: #ebe5f0;
+  font-size: 14px;
+}
+.topContainer .inputBox input::placeholder {
+  color: #ebe5f0;
+  font-size: 14px;
+}
+.topContainer .profileContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  position: relative;
+}
+.topContainer .profileContainer i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.topContainer .profileContainer .profileIcon {
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+.topContainer .profileContainer .profileIcon::before {
+  content: "";
+  background-color: #222024;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: -1;
+  top: -7px;
+  left: -7px;
+}
+.topContainer .profileContainer .profileIcon::after {
+  content: "3";
+  position: absolute;
+  background-color: red;
+  width: 17px;
+  height: 17px;
+  top: -5px;
+  right: -3px;
+  border-radius: 50%;
+  font-style: normal;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.9;
+}
+.topContainer .profileContainer .profileImage {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.topContainer .profileContainer .chevronMenu {
+  cursor: pointer;
+}
+.topContainer .profileContainer .chevronMenuContainer {
+  position: relative;
+  background-color: orange;
+}
+.topContainer .profileContainer .chevronMenuContainer ul {
+  position: absolute;
+  background-color: #222024;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  right: 10px;
+  border-radius: 8px;
+  width: 170px;
+  z-index: 1;
+}
+.topContainer .profileContainer .chevronMenuContainer ul::before {
+  content: "";
+  background-color: #222024;
+  width: 25px;
+  height: 25px;
+  top: -12px;
+  right: 7px;
+  position: absolute;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(53% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(53% 0, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+.topContainer .profileContainer .chevronMenuContainer ul li {
+  width: 100%;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.topContainer .profileContainer .chevronMenuContainer ul li:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.topContainer .profileContainer .chevronMenuContainer ul li:last-child {
+  border-radius: 0 0 8px 8px;
+}
+.topContainer .profileContainer .chevronMenuContainer ul li:hover {
+  background-color: #8322e4;
+  transition: all 0.5s ease;
+}/*# sourceMappingURL=styles.css.map */
