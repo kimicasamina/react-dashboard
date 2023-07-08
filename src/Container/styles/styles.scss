@@ -55,6 +55,7 @@
         justify-content: flex-end;
         column-gap: 16px;
         position: relative;
+        z-index: 5;
         
         i {
             display: flex;
@@ -111,14 +112,16 @@
         }
 
         .chevronMenu {
-            // position: relative;
             cursor: pointer;
         }
 
         .chevronMenuContainer {
             position: relative;
-            background-color: orange;
-            // width: 180px;
+            // transform: translateX(300px);
+            bottom: -50px;
+            transform: scaleY(0);
+            transition: all 0.3s ease;
+            z-index: -3;
 
             ul {
                 position: absolute;
@@ -130,19 +133,6 @@
                 border-radius: 8px;
                 width: 170px;
                 z-index: 1;
-
-                &::before {
-                    content: '';
-                    background-color: $lightDark;
-                    width: 25px;
-                    height: 25px;
-                    top: -12px;
-                    right: 7px;
-                    position: absolute;
-                    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-                    clip-path: polygon(53% 0, 0% 100%, 100% 100%);
-                    z-index: -1;
-                }
                 
                 li {
                     width: 100%;
@@ -166,5 +156,23 @@
             }
         }
 
+        .chevronMenuContainer::before {
+            content: '';
+            background-color: $lightDark;
+            width: 25px;
+            height: 25px;
+            bottom: -60px;
+            right: 17px;
+            position: absolute;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            clip-path: polygon(53% 0, 0% 100%, 100% 100%);
+            z-index: 1;
+        }
+
+        .chevronMenuContainer.active {
+        //    transform: translateX(0);
+            bottom: 0;
+            transform: scaleY(1);
+        }
     }
 }

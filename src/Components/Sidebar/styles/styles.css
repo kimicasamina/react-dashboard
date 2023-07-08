@@ -9,6 +9,16 @@
     width: 60px;
   }
 }
+@keyframes slideDown {
+  0% {
+    bottom: -50px;
+    transform: scaleY(0);
+  }
+  100% {
+    bottom: 0;
+    transform: scaleY(1);
+  }
+}
 .sidebar {
   display: block;
   background-color: #222024;
