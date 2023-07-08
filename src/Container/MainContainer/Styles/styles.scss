@@ -1,0 +1,195 @@
+@import '../../../Styles/Sass/variables';
+
+.mainContainer {
+    width: 100%;
+    height: calc(100% - (80px + $pdMd));
+    background-color: $dark;
+    margin: $pdMd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    // gap: 16px;
+
+    .leftContainer {
+        width: calc(100% - 30%);
+        flex-basis: 70%;
+        margin-right: 16px;
+        overflow-y: scroll;
+        // overflow-style: none; 
+        overflow-y: scroll; 
+        scrollbar-width: none;
+        overflow-block: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .banner {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../Assets/Images/bar2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            height: 260px;
+            display: flex;
+            justify-content: flex-end;
+            box-shadow: $bsMaterial;
+            margin-bottom: 16px;
+            position: relative;
+
+            .textContainer {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 16px;
+                height: 100%;
+                margin-right: 16px;
+                // row-gap: 8px;
+
+                .title {
+                    font-size: 48px;
+                }
+
+                .subTitle {
+                    color: $secondary;
+                    font-size: 32px;
+                }
+
+                .bid {
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    column-gap: 16px;
+                    width: 100%;
+                    margin: 16px 0;
+                    // padding: 8px 0;
+
+                    .bidBtn {
+                        background-color: $secondary;
+                        padding: 8px 16px;
+                        outline: none;
+                        border: 0;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        box-shadow: $bsMaterial;
+                        color: $lightDark;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+
+                    .end {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+
+                    .time {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+        .cards {
+           
+            
+            .filter {
+                border-radius: 8px;
+                background-color: $lightDark;
+                display: flex;
+                justify-content: space-between;
+                padding: 16px;
+                margin-bottom: 16px;
+                box-shadow: $bsMaterial;
+                
+                .leftFilter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 16px;
+                    cursor: pointer;
+
+                    h3 {
+                        color: #e9e9ec;
+                        font-size: 16px;
+                        font-size: 14px;
+                        padding: 8px;
+                        border-radius: 8px;
+                        border: solid 1px transparent;
+                        font-weight: bold;
+                    }
+
+                    a {
+                        padding: 8px 16px;
+                        border: solid 1px $secondary;
+                        border-radius: 8px;
+                    }
+                }
+
+                .rightFilter {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    column-gap: 16px;
+
+                    .filterBtn {
+                        // width: 100px;
+                        padding: 8px 16px;
+                        border: solid 1px $secondary;
+                        border-radius: 8px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            background-color: $secondary;
+                            // color: $lightDark;
+                            // box-shadow: $bsMaterial;
+                            // font-weight: 700;
+                        }
+
+                        &.active {
+                            background-color: $secondary;
+                            // color: $lightDark;
+                        }
+                    }
+                }
+            }
+
+            .main {
+                background-color: $lightDark;
+                padding: 16px;
+                box-shadow: $bsMaterial;
+                display: flex;
+                flex-direction: row;
+                border-radius: 8px;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                
+                // text-align: center;
+                // margin-inline: auto;
+                // justify-content: space-evenly;
+                column-gap: 16px;
+                row-gap: 40px;
+            }
+        }
+    }
+
+    .rightContainer {
+        width: calc(100% - 70%);
+        background-color: yellow;
+        // width: 100%;
+
+      
+
+
+    }
+}

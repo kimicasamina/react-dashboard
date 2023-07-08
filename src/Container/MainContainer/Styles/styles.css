@@ -1,0 +1,175 @@
+@keyframes slideRight {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+@keyframes slideDown {
+  0% {
+    bottom: -50px;
+    transform: scaleY(0);
+  }
+  100% {
+    bottom: 0;
+    transform: scaleY(1);
+  }
+}
+.mainContainer {
+  width: 100%;
+  height: calc(100% - (80px + 0.875rem));
+  background-color: #17141a;
+  margin: 0.875rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.mainContainer .leftContainer {
+  width: 70%;
+  flex-basis: 70%;
+  margin-right: 16px;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-block: none;
+}
+.mainContainer .leftContainer::-webkit-scrollbar {
+  display: none;
+}
+.mainContainer .leftContainer .banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../Assets/Images/bar2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  height: 260px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.mainContainer .leftContainer .banner .textContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  height: 100%;
+  margin-right: 16px;
+}
+.mainContainer .leftContainer .banner .textContainer .title {
+  font-size: 48px;
+}
+.mainContainer .leftContainer .banner .textContainer .subTitle {
+  color: #ffa500;
+  font-size: 32px;
+}
+.mainContainer .leftContainer .banner .textContainer .bid {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  width: 100%;
+  margin: 16px 0;
+}
+.mainContainer .leftContainer .banner .textContainer .bid .bidBtn {
+  background-color: #ffa500;
+  padding: 8px 16px;
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: #222024;
+  cursor: pointer;
+}
+.mainContainer .leftContainer .banner .textContainer .bid .bidBtn:hover {
+  color: #ebe5f0;
+}
+.mainContainer .leftContainer .banner .textContainer .bid .end {
+  font-weight: 500;
+  font-size: 16px;
+}
+.mainContainer .leftContainer .banner .textContainer .bid .time {
+  color: #ffa500;
+}
+.mainContainer .leftContainer .cards .filter {
+  border-radius: 8px;
+  background-color: #222024;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.mainContainer .leftContainer .cards .filter .leftFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  cursor: pointer;
+}
+.mainContainer .leftContainer .cards .filter .leftFilter h3 {
+  color: #e9e9ec;
+  font-size: 16px;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 8px;
+  border: solid 1px transparent;
+  font-weight: bold;
+}
+.mainContainer .leftContainer .cards .filter .leftFilter a {
+  padding: 8px 16px;
+  border: solid 1px #ffa500;
+  border-radius: 8px;
+}
+.mainContainer .leftContainer .cards .filter .rightFilter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.mainContainer .leftContainer .cards .filter .rightFilter .filterBtn {
+  padding: 8px 16px;
+  border: solid 1px #ffa500;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.mainContainer .leftContainer .cards .filter .rightFilter .filterBtn:hover {
+  background-color: #ffa500;
+}
+.mainContainer .leftContainer .cards .filter .rightFilter .filterBtn.active {
+  background-color: #ffa500;
+}
+.mainContainer .leftContainer .cards .main {
+  background-color: #222024;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 40px;
+}
+.mainContainer .rightContainer {
+  width: 30%;
+  background-color: yellow;
+}/*# sourceMappingURL=styles.css.map */

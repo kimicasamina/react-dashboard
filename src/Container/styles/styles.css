@@ -40,6 +40,7 @@
   height: 70%;
   display: flex;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .topContainer .inputBox .searchIcon {
   position: absolute;
@@ -97,11 +98,12 @@
   z-index: -1;
   top: -7px;
   left: -7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .topContainer .profileContainer .profileIcon::after {
   content: "3";
   position: absolute;
-  background-color: red;
+  background-color: #e94444;
   width: 17px;
   height: 17px;
   top: -5px;
@@ -140,6 +142,7 @@
   border-radius: 8px;
   width: 170px;
   z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .topContainer .profileContainer .chevronMenuContainer ul li {
   width: 100%;
@@ -154,7 +157,7 @@
   border-radius: 0 0 8px 8px;
 }
 .topContainer .profileContainer .chevronMenuContainer ul li:hover {
-  background-color: #8322e4;
+  background-color: #ffa500;
   transition: all 0.5s ease;
 }
 .topContainer .profileContainer .chevronMenuContainer::before {
