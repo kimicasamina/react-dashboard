@@ -104,12 +104,13 @@
   color: #ffa500;
 }
 .mainContainer .leftContainer .cards .filter {
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   background-color: #222024;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 16px;
-  margin-bottom: 16px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .mainContainer .leftContainer .cards .filter .leftFilter {
@@ -161,9 +162,9 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
   flex-direction: row;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   -moz-column-gap: 16px;
        column-gap: 16px;

@@ -97,17 +97,17 @@
             }
         }
 
-        .cards {
-           
-            
+        .cards { 
             .filter {
-                border-radius: 8px;
+                border-radius: 8px 8px 0 0;
                 background-color: $lightDark;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
                 padding: 16px;
-                margin-bottom: 16px;
                 box-shadow: $bsMaterial;
+                // margin-bottom: 16px;
                 
                 .leftFilter {
                     display: flex;
@@ -169,14 +169,10 @@
                 box-shadow: $bsMaterial;
                 display: flex;
                 flex-direction: row;
-                border-radius: 8px;
+                border-radius: 0 0 8px 8px;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 align-items: center;
-                
-                // text-align: center;
-                // margin-inline: auto;
-                // justify-content: space-evenly;
                 column-gap: 16px;
                 row-gap: 40px;
             }

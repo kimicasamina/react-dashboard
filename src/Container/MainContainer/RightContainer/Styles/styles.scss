@@ -1,0 +1,62 @@
+@import '../../../../Styles/Sass/variables';
+
+.topRightContainer {
+    background-color: $dark;
+    // margin-bottom: $marginMedium;
+    padding-bottom: $marginMedium;
+
+    .stats {
+        color: $white;
+        background-color: $lightDark;
+        // height: 280px;
+        padding: $pdSmall; 
+        border-radius: 8px;
+
+
+        &__name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: $pdSmall;
+
+            h2 {
+                // color: red;
+            }
+
+            a {
+                color: $secondary;
+                text-decoration: underline;
+            }
+        }
+
+        &__body {
+            padding: $pdSmall;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding: $pdSmall;
+                border-radius: 8px;
+                // margin-bottom: $marginSmall;
+
+                h3, span {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+
+                &:nth-child(odd){
+                    background-color: $lightPurple;
+                    box-shadow: $bsMaterial;
+                }
+
+                .totalEarning {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}

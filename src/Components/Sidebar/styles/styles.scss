@@ -6,7 +6,6 @@
     color: $white;
     width: $sidebarWidth;
     height: 100%;
-    // background-color: purple;
     padding: $pdMd;
     box-shadow: $bsMaterial;
 }
@@ -21,7 +20,7 @@
     .beerIcon {
         color: $secondary;
         margin-right: $marginSmall;
-        font-size: 60px;
+        font-size: 50px;
     }
     
     .brand {
@@ -32,6 +31,7 @@
         letter-spacing: 2px;
         color: $secondary;
         font-weight: 700;
+        font-family: "JetBrains Mono",monospace;
     }
 }
 
@@ -49,7 +49,6 @@
         display: flex;
         column-gap: $marginMedium;
         cursor: pointer;
-        // row-gap: $marginSmall;
         padding: $pdMd 0;
         border-bottom: solid 1px transparent;
         position: relative;
@@ -67,19 +66,14 @@
         &:before {
             content: "";
             position: absolute;
-            // background-color: $secondary;
-            // animation: slideRight 0.5s ease-in forwards;
             width: 100%;
             height: 1px;
             left: 0;
             bottom: 0;
-            // z-index: 2;
         }
 
         &:hover {
             color: $secondary;
-            // background-color: purple;
-            // width: 100%;
 
             .menuIcon {
                 transform: scale(1.1);
@@ -121,13 +115,10 @@
         &:before {
             content: "";
             position: absolute;
-            // background-color: $secondary;
             width: 100%;
             height: 1px;
             left: 0;
             bottom: 0;
-            // animation: slideRight 0.5s ease-in forwards;
-            // z-index: 2;
         }
 
         &:hover {

@@ -1,0 +1,64 @@
+@keyframes slideRight {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+@keyframes slideDown {
+  0% {
+    bottom: -50px;
+    transform: scaleY(0);
+  }
+  100% {
+    bottom: 0;
+    transform: scaleY(1);
+  }
+}
+.topRightContainer {
+  background-color: #17141a;
+  padding-bottom: 1rem;
+}
+.topRightContainer .stats {
+  color: #ebe5f0;
+  background-color: #222024;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.topRightContainer .stats__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.topRightContainer .stats__name a {
+  color: #ffa500;
+  text-decoration: underline;
+}
+.topRightContainer .stats__body {
+  padding: 0.5rem;
+}
+.topRightContainer .stats__body li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.topRightContainer .stats__body li h3, .topRightContainer .stats__body li span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.topRightContainer .stats__body li span {
+  font-weight: 600;
+}
+.topRightContainer .stats__body li:nth-child(odd) {
+  background-color: #3e3a44;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.topRightContainer .stats__body li .totalEarning {
+  color: #ffa500;
+}/*# sourceMappingURL=styles.css.map */
