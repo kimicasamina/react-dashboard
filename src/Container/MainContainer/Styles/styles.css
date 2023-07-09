@@ -21,19 +21,18 @@
 }
 .mainContainer {
   width: 100%;
-  height: calc(100% - (80px + 0.875rem));
+  height: calc(100% - 80px);
   background-color: #17141a;
-  margin: 0.875rem;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
-  padding-top: 16px;
+  padding-top: 0.875rem;
+  margin-top: 1rem;
 }
 .mainContainer .leftContainer {
   width: 70%;
   flex-basis: 70%;
   margin-right: 16px;
-  overflow-y: scroll;
   overflow-y: scroll;
   scrollbar-width: none;
   overflow-block: none;

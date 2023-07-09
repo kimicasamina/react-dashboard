@@ -2,20 +2,22 @@
 
 .mainContainer {
     width: 100%;
-    height: calc(100% - (80px + $pdMd));
+    height: calc(100% - 80px);
     background-color: $dark;
-    margin: $pdMd;
+    // margin: $pdMd;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
-    padding-top: 16px;
+    padding-top: $pdMd;
+    margin-top: $marginMedium;
+    // padding: 0 $pdMd;
     // gap: 16px;
 
     .leftContainer {
         width: calc(100% - 30%);
         flex-basis: 70%;
         margin-right: 16px;
-        overflow-y: scroll;
+        // overflow-y: scroll;
         // overflow-style: none; 
         overflow-y: scroll; 
         scrollbar-width: none;

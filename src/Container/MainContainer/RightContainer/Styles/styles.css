@@ -19,6 +19,16 @@
     transform: scaleY(1);
   }
 }
+.rightContainer {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-block: none;
+}
+.rightContainer::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
 .topRightContainer {
   background-color: #17141a;
   padding-bottom: 1rem;
@@ -61,4 +71,55 @@
 }
 .topRightContainer .stats__body li .totalEarning {
   color: #ffa500;
+}
+
+.bottomRightContainer {
+  background-color: #17141a;
+}
+.bottomRightContainer .topSellers {
+  border-radius: 8px;
+  background-color: #222024;
+  padding: 0.5rem;
+}
+.bottomRightContainer .topSellers__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.bottomRightContainer .topSellers__name a {
+  text-decoration: underline;
+  color: #ffa500;
+}
+.bottomRightContainer .topSellers__list {
+  padding: 0.5rem;
+}
+.bottomRightContainer .topSellers__list .profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.bottomRightContainer .topSellers__list .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 8px;
+}
+.bottomRightContainer .topSellers__list .profile__name h3 {
+  font-size: 14px;
+}
+.bottomRightContainer .topSellers__list .profile__name p {
+  font-size: 12px;
+}
+.bottomRightContainer .topSellers__list .profile .btn {
+  align-self: flex-end;
+  justify-self: flex-end;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  height: 30px;
 }/*# sourceMappingURL=styles.css.map */

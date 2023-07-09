@@ -1,5 +1,16 @@
 @import '../../../../Styles/Sass/variables';
 
+.rightContainer {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow-block: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+    }
+}
+
 .topRightContainer {
     background-color: $dark;
     // margin-bottom: $marginMedium;
@@ -59,4 +70,75 @@
             }
         }
     }
+}
+
+.bottomRightContainer {
+    background-color: $dark;
+
+    // overflow: visible;
+
+    .topSellers {
+        border-radius: 8px;
+        background-color: $lightDark;
+        padding: $pdSmall;
+  
+        
+        &__name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: $pdSmall;
+
+            a {
+                text-decoration: underline;
+                color: $secondary;
+            }
+        }
+
+        &__list {
+            padding: $pdSmall;
+            // color: red;
+            // display: flex;
+
+            .profile {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: $pdSmall 0;
+                position: relative;
+                // margin-bottom: 8px;
+                // background-color: orange;
+                // justify-content: center;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 8px;
+                }
+
+                &__name {
+                    // width: 100%;
+                    h3 {
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                .btn {
+                    align-self: flex-end;
+                    justify-self: flex-end;
+                    position: absolute;
+                    top: 15px;
+                    right: 0;
+                    height: 30px;
+                    // background-color: $secondary;;
+                }
+            }
+        }
+    }
+
 }
